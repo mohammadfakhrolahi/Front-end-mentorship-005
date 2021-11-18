@@ -1,0 +1,11 @@
+@mixin flex-justify_sb-item_center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-justify_center-items_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

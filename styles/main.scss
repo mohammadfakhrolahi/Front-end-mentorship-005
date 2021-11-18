@@ -3,4 +3,12 @@
 @import './globalStyling/_variables.scss';
 @import './components/buttons.scss';
 
-
+main {
+  background: rgb(158, 196, 240);
+  background: radial-gradient(
+    circle,
+    rgba(158, 196, 240, 1) 7%,
+    rgba(238, 174, 202, 1) 47%,
+    rgba(158, 196, 240, 1) 91%
+  );
+}

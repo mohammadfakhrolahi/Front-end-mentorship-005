@@ -69,4 +69,9 @@ hr {
   border: 0;
 }
 
+main {
+  background: #9ec4f0;
+  background: radial-gradient(circle, #9ec4f0 7%, #eeaeca 47%, #9ec4f0 91%);
+}
+
 /*# sourceMappingURL=main.css.map */
