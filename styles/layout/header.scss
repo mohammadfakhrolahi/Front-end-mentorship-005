@@ -7,9 +7,10 @@
   width: 100%;
   height: 7rem;
   @include flex-justify_sb-item_center();
-  background: rgba(255, 255, 255, 0.63);
+  background: rgba(255, 255, 255, 0.73);
   backdrop-filter: saturate(180%) blur(1.87rem);
   padding: 0 3rem;
+  position: absolute;
 }
 
 // ---- Logo ----

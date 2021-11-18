@@ -9,3 +9,14 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin flex-column-justify_start {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+@mixin flex-items_center {
+  display: flex;
+  align-items: center;
+}
