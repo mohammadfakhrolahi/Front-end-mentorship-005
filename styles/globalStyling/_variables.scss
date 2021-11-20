@@ -1,3 +1,4 @@
+// Flex box
 @mixin flex-justify_sb-item_center {
   display: flex;
   justify-content: space-between;
@@ -16,7 +17,20 @@
   justify-content: flex-start;
 }
 
+@mixin flex-column-items_end {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 @mixin flex-items_center {
   display: flex;
   align-items: center;
+}
+
+
+// Grid
+@mixin main-section-grid {
+  display: grid;
+  grid-template-columns: 27rem auto 27rem;
 }

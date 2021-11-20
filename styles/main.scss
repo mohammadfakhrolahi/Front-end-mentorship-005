@@ -1,10 +1,11 @@
 @import './globalStyling/colors';
 @import './globalStyling/reset';
 @import './globalStyling/_variables.scss';
-@import './components/buttons.scss';
+@import './globalStyling/components';
 
 // Background
 main {
+  min-height: 100vh;
   @include flex-justify_center-items_center();
   background: rgb(158, 196, 240) center/cover no-repeat;
   background: radial-gradient(
@@ -13,22 +14,34 @@ main {
     rgba(238, 174, 202, 1) 47%,
     rgba(158, 196, 240, 1) 91%
   );
-  padding: 14rem 10rem;
+  padding-top: 14rem;
 }
 
-// #main-container {
-//   border-radius: 30px
-// }
-
-// Main navigation - left side
-.main-nav {
-  @include flex-column-justify_start();
+// ---- Main container ----
+#main-container {
+  width: 85%;
+  min-height: 80vh;
+  @include main-section-grid();
   background: rgba(255, 255, 255, 0.63);
   backdrop-filter: saturate(180%) blur(1.87rem);
-  padding: 5rem;
-  border-radius: 30px 0 0 30px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-right-color: rgba(255, 255, 255, 0);
+  border-bottom-color: rgba(255, 255, 255, 0);
+  // padding: 1px 0 0 1px;
+  border-radius: 3.5rem;
 }
 
+// ---- Main navigation - left side ----
+.main-nav {
+  // width: 23rem;
+  height: 80vh;
+  @include flex-column-justify_start();
+  // background: rgba(255, 255, 255, 0.63);
+  // backdrop-filter: saturate(180%) blur(1.87rem);
+  padding: 5rem 0 5rem 5rem;
+  border-radius: 30px 0 0 30px;
+}
+// Nav header
 .main-nav-header {
   @include flex-items_center();
 
@@ -43,7 +56,7 @@ main {
       rgba(37, 34, 88, 1) 37%,
       rgba(68, 22, 167, 1) 76%
     );
-    color: #fff;
+    color: $white;
     padding: 0.5rem;
     border-radius: 50%;
     font-size: 2rem;
@@ -57,7 +70,7 @@ main {
     }
   }
 }
-
+// List
 .main-nav-list {
   margin-top: 5rem;
 
@@ -98,4 +111,128 @@ main {
       }
     }
   }
+}
+
+// ---- Center section ----
+.center-section {
+  background: rgba(255, 255, 255, 0.35);
+  padding: 5rem 5rem 2rem 5rem;
+}
+
+// Section header
+.section-header-container {
+  padding-bottom: 5rem;
+
+  .section-header {
+    font-weight: 500;
+  }
+}
+
+// ---- Search result ----
+#search-result {
+  background: rgba(112, 56, 232, 0.102);
+  backdrop-filter: saturate(180%) blur(1.87rem);
+  padding: 1.5rem 0;
+  margin: 2.5rem 0 1.5rem 0;
+  border-radius: 0.75rem;
+  text-align: center;
+
+  span {
+    font: {
+      size: 1.3rem;
+      weight: 500;
+    }
+  }
+}
+
+// ---- Job card ----
+.job-card-container {
+  background: rgba(255, 255, 255, 0.65);
+  padding: 2.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 1rem;
+}
+
+.job-card-container:hover {
+  background: $white;
+  box-shadow: 0 10px 40px -5px rgba(0, 0, 0, 0.103);
+  transition: 0.2s;
+}
+
+// Job card header
+.job-card__header {
+  @include flex-items_center();
+
+  .job-card__main-content {
+    width: 100%;
+    @include flex-justify_sb-item_center();
+
+    .job-card__main-content__sub {
+      margin-left: 1.5rem;
+
+      // Job title
+      .job-card-title {
+        color: $black;
+        font-weight: 500;
+      }
+
+      .further-info-container {
+        @include flex-items_center();
+
+        .further-info {
+          margin-right: 2.5em;
+
+          .further-info__text {
+            color: $manatee;
+            margin-left: 1rem;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+
+    // Salary
+    .salary-container {
+      @include flex-column-items_end();
+
+      .salary-price {
+        color: $black;
+        font: {
+          size: 1.4rem;
+          weight: 600;
+        }
+      }
+
+      .salary-per-time {
+        color: $manatee;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+// Job card description
+.job-card-description {
+  width: 85%;
+  color: $black;
+  margin-top: 2rem;
+}
+
+// Job card tags
+.job-card-tags {
+  margin-top: 2.5rem;
+
+  .tag {
+    background: $lavender-web;
+    color: $blue-violet;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0.3rem;
+    border-radius: 0.75rem;
+  }
+}
+
+// ---- Left side ----
+.right-side {
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 0 3.5rem 3.5rem 0;
 }

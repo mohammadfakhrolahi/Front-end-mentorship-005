@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,11 @@
     <link rel="stylesheet" href="./styles/layout/header.css">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Job Seeker</title>
 </head>
+
 <body>
     <header id="header">
         <a href="./index.html" id="logo">Job Seeker</a>
@@ -20,7 +22,7 @@
                 <li class="header-nav-item">
                     <a href="#">Company reviews</a>
                 </li>
-                
+
                 <li class="header-nav-item">
                     <a href="#">Find salaries</a>
                 </li>
@@ -52,7 +54,7 @@
 
                 <div class="main-nav-header">
                     <i class="fas fa-clipboard-list"></i>
-                    <span class="main-nav-header-title">Find A Job</span>
+                    <h3 class="main-nav-header-title">Find A Job</h3>
                 </div>
 
                 <ul class="main-nav-list">
@@ -94,8 +96,188 @@
 
             </nav>
 
+            <div class="center-section">
+                <div class="section-header-container">
+                    <h1 class="section-header">Looking for work</h1>
+                </div>
+
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <div class="search-box__form">
+                        <form>
+                            <input type="text" name="search-job" class="search-input"
+                                placeholder="Job title or keywords">
+                            <button class="serach-btn">Find jobs</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="search-result">
+                    <span>3 Jobs</span>
+                </div>
+
+                <div class="job-card">
+                    <a href="#" class="job-card__link">
+                        <div class="job-card-container">
+
+                            <div class="job-card__header">
+                                <div class="profile-picture-m">
+                                    <img class="image-m" src="./image/3m.png" title="Profile picture" id="i1"
+                                        alt="Profile picture">
+                                </div>
+
+                                <div class="job-card__main-content">
+                                    <div class="job-card__main-content__sub">
+                                        <h2 class="job-card-title">UI design for webflow pages</h2>
+
+                                        <div class="further-info-container">
+                                            <div class="further-info">
+                                                <i class="fas fa-certificate"></i>
+                                                <span class="further-info__text">Payment verified</span>
+                                            </div>
+                                            <div class="further-info">
+                                                <i class="fas fa-clock"></i>
+                                                <span class="further-info__text">10 min ago</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="salary-container">
+                                        <span class="salary-price">50$</span>
+                                        <span class="salary-per-time">Per hour</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="job-card-description">
+                                <span>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, nesciunt.Lorem
+                                    ipsum dolor, sit amet consectetur adipisicing elit. Quasi, nesciunt.
+                                </span>
+                            </div>
+
+                            <div class="job-card-tags">
+                                <a href="#">
+                                    <span class="tag">design</span>
+                                </a>
+                                <a href="#">
+                                    <span class="tag">frontend developer</span>
+                                </a>
+                                <a href="#">
+                                    <span class="tag">internship</span>
+                                </a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="job-card">
+                    <a href="#" class="job-card__link">
+                        <div class="job-card-container">
+
+                            <div class="job-card__header">
+                                <div class="profile-picture-m">
+                                    <img class="image-m" src="./image/2m.png" id="i2" title="Profile picture"
+                                        alt="Profile picture">
+                                </div>
+
+                                <div class="job-card__main-content">
+                                    <div class="job-card__main-content__sub">
+                                        <h2 class="job-card-title">Senior react developer</h2>
+
+                                        <div class="further-info-container">
+                                            <div class="further-info">
+                                                <i class="fas fa-certificate"></i>
+                                                <span class="further-info__text">Payment verified</span>
+                                            </div>
+                                            <div class="further-info">
+                                                <i class="fas fa-clock"></i>
+                                                <span class="further-info__text">10 min ago</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="salary-container">
+                                        <span class="salary-price">50$</span>
+                                        <span class="salary-per-time">Per hour</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="job-card-description">
+                                <span>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, nesciunt.Lorem
+                                    ipsum dolor, sit amet consectetur adipisicing elit. Quasi, nesciunt.
+                                </span>
+                            </div>
+
+                            <div class="job-card-tags">
+                                <span class="tag">design</span>
+                                <span class="tag">frontend developer</span>
+                                <span class="tag">internship</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="job-card">
+                    <a href="#" class="job-card__link">
+                        <div class="job-card-container">
+
+                            <div class="job-card__header">
+                                <div class="profile-picture-m">
+                                    <img class="image-m" src="./image/1a.jpg" id="i3" title="Profile picture"
+                                        alt="Profile picture">
+                                </div>
+
+                                <div class="job-card__main-content">
+                                    <div class="job-card__main-content__sub">
+                                        <h2 class="job-card-title">Intermediate Front End Engineer (Remote)</h2>
+
+                                        <div class="further-info-container">
+                                            <div class="further-info">
+                                                <i class="fas fa-certificate"></i>
+                                                <span class="further-info__text">Payment verified</span>
+                                            </div>
+                                            <div class="further-info">
+                                                <i class="fas fa-clock"></i>
+                                                <span class="further-info__text">10 min ago</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="salary-container">
+                                        <span class="salary-price">50$</span>
+                                        <span class="salary-per-time">Per hour</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="job-card-description">
+                                <span>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, nesciunt.Lorem
+                                    ipsum dolor, sit amet consectetur adipisicing elit. Quasi, nesciunt.
+                                </span>
+                            </div>
+
+                            <div class="job-card-tags">
+                                <span class="tag">design</span>
+                                <span class="tag">frontend developer</span>
+                                <span class="tag">internship</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <aside class="right-side">
+                box2
+            </aside>
+
         </section>
 
     </main>
 </body>
+
 </html>
