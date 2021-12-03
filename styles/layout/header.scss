@@ -46,13 +46,13 @@
           size: 1.6rem;
           weight: 500;
         }
-      }
-
-      a:hover {
-        background: rgba(255, 255, 255, 0.57);
-        padding: 0.5rem 0.75rem;
-        border-radius: 10px;
-        transition: 0.2s;
+        
+        &:hover {
+          background: rgba(255, 255, 255, 0.57);
+          padding: 0.5rem 0.75rem;
+          border-radius: 10px;
+          transition: 0.2s;
+        }
       }
     }
   }
@@ -70,12 +70,11 @@
     padding: 0.5rem;
     margin-left: 2.5rem;
     border-radius: 50%;
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   a:hover {
     background: rgba(255, 255, 255, 0.57);
-    padding: 0.5rem;
     margin-left: 2.5rem;
     transition: 0.2s;
   }

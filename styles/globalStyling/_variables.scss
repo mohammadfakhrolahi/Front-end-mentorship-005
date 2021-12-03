@@ -11,6 +11,12 @@
   align-items: center;
 }
 
+@mixin flex-justify_start-items_center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 @mixin flex-column-justify_start {
   display: flex;
   flex-direction: column;
@@ -29,7 +35,7 @@
 }
 
 
-// Grid
+// CSS Grid
 @mixin main-section-grid {
   display: grid;
   grid-template-columns: 27rem auto 27rem;

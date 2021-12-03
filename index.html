@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/layout/header.css">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/layout/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -46,8 +47,8 @@
     </header>
 
 
+    <a name="go-top"></a>
     <main>
-
         <section id="main-container">
 
             <nav class="main-nav">
@@ -121,9 +122,9 @@
                         <div class="job-card-container">
 
                             <div class="job-card__header">
-                                <div class="profile-picture-m">
-                                    <img class="image-m" src="./image/3m.png" title="Profile picture" id="i1"
-                                        alt="Profile picture">
+                                <div class="avatar-m">
+                                    <img class="image-m" src="./image/3m.png" title="avatar" id="i1"
+                                        alt="avatar">
                                 </div>
 
                                 <div class="job-card__main-content">
@@ -176,9 +177,9 @@
                         <div class="job-card-container">
 
                             <div class="job-card__header">
-                                <div class="profile-picture-m">
-                                    <img class="image-m" src="./image/2m.png" id="i2" title="Profile picture"
-                                        alt="Profile picture">
+                                <div class="avatar-m">
+                                    <img class="image-m" src="./image/2m.png" id="i2" title="avatar"
+                                        alt="avatar">
                                 </div>
 
                                 <div class="job-card__main-content">
@@ -225,9 +226,9 @@
                         <div class="job-card-container">
 
                             <div class="job-card__header">
-                                <div class="profile-picture-m">
-                                    <img class="image-m" src="./image/1a.jpg" id="i3" title="Profile picture"
-                                        alt="Profile picture">
+                                <div class="avatar-m">
+                                    <img class="image-m" src="./image/1a.jpg" id="i3" title="avatar"
+                                        alt="avatar">
                                 </div>
 
                                 <div class="job-card__main-content">
@@ -272,12 +273,116 @@
             </div>
 
             <aside class="right-side">
-                box2
+                <div class="profile-box">
+                    <div class="avatar-s">
+                        <a href="#">
+                            <img src="./image/6m.png" class="image-m" alt="Avatar" title="Avatar">
+                        </a>
+                    </div>
+
+                    <div class="profile-box__content">
+                        <div class="profile-box-name">
+                            <a href="#">
+                                <span class="profile-box-name__name">Mohammad F</span>
+                            </a>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <span class="profile-box__job-position">Front End Developer</span>
+                    </div>
+                </div>
+
+                <div class="filter">
+                    <span id="filter-header">Filter</span>
+
+                    <span class="hr-tag">
+                        <hr>
+                    </span>
+
+                    <div class="checkbox">
+                        <span class="checkbox-header">Ability</span>
+
+                        <ul class="checkbox-nav">
+                            <li>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="checkbox-item" >
+                                    <span class="checkmark">
+                                        Backend Developer
+                                    </span>
+                                    <span class="checkmark-number">
+                                        &nbsp;(3)
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="checkbox-item" >
+                                    <span class="checkmark">
+                                        Backend Developer
+                                    </span>
+                                    <span class="checkmark-number">
+                                        &nbsp;(3)
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="checkbox-item" >
+                                    <span class="checkmark">
+                                        Backend Developer
+                                    </span>
+                                    <span class="checkmark-number">
+                                        &nbsp;(3)
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="checkbox-item" >
+                                    <span class="checkmark">
+                                        Back
+                                    </span>
+                                    <span class="checkmark-number">
+                                        &nbsp;(3)
+                                    </span>
+                                </label>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="checkbox">
+                            <span class="checkbox-header">Type of work</span>
+
+                            <ul class="checkbox-nav">
+                                <li>
+                                    <label class="checkbox-item">
+                                        <input type="checkbox" name="checkbox-item" >
+                                        <span class="checkmark">
+                                            Backend Developer
+                                        </span>
+                                        <span class="checkmark-number">
+                                            &nbsp;(3)
+                                        </span>
+                                    </label>
+                                </li>
+    
+                            </ul>
+                    </div>
+                    
+                </div>
             </aside>
 
         </section>
 
     </main>
+
+    <a href="#go-top" class="go-top-arrow">
+        <i class="fas fa-arrow-circle-up"></i>
+    </a>
+
+    <footer>
+        qqq
+    </footer>
 </body>
 
 </html>
