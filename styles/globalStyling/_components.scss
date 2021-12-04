@@ -132,20 +132,72 @@
   padding: 0.5rem 1rem;
   border-radius: 10px;
   cursor: pointer;
+  user-select: none;
 
-  .checkmark {
-    margin-left: 1rem;
+  // Checkbox
+  .checkbox {
+    width: 0rem;
+    height: 0rem;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+
+    &:checked ~ .custom-checkbox {
+      background: $blue-violet;
+      font-weight: 500;
+      border: 2px solid $blue-violet;
+      transition: 0.1s;
+    }
+
+    &:checked ~ .checkbox-text {
+      color: $space-cadet;
+      font-weight: 500;
+    }
+  }
+
+  // Custom checkbox
+  .custom-checkbox {
+    height: 1.8rem;
+    width: 1.8rem;
+    background-color: rgba(235, 10, 10, 0);
+    border-radius: 0.4rem;
+    border: 2px solid $cadet-blue-crayola3;
+    // top: 0;
+    // left: 0;
+    position: absolute;
+  }
+
+  .checkbox-text {
+    margin-left: 3rem;
     font-size: 1.35rem;
   }
 
-  .checkmark-number {
+  .checkbox-number {
     font-size: 1.1rem;
   }
 
   &:hover {
     background: rgba(255, 255, 255, 0.815);
     transition: 0.2s;
+
+    // Custom checkbox
+    .custom-checkbox {
+      border: 2px solid $medium-purple;
+      transition: 0.2s;
+    }
   }
+}
+
+.checkbox-item .custom-checkbox :after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 // hr tag
