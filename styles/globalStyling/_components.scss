@@ -94,23 +94,23 @@
 }
 
 // Go top button
-.go-top-arrow {
-  @include flex-justify_center-items_center();
-  width: 3rem;
-  height: 3rem;
+// .go-top-arrow {
+//   @include flex-justify_center-items_center();
+//   width: 3rem;
+//   height: 3rem;
 
-  .fa-arrow-circle-up {
-    @include flex-justify_center-items_center();
-    padding: 1rem;
-    color: $space-cadet;
-    font-size: 3rem;
-  }
+//   .fa-arrow-circle-up {
+//     @include flex-justify_center-items_center();
+//     padding: 1rem;
+//     color: $space-cadet;
+//     font-size: 3rem;
+//   }
 
-  .fa-arrow-circle-up:hover {
-    background: rgba(214, 11, 11, 0.63);
-    backdrop-filter: saturate(180%) blur(1.87rem);
-  }
-}
+//   .fa-arrow-circle-up:hover {
+//     background: rgba(214, 11, 11, 0.63);
+//     backdrop-filter: saturate(180%) blur(1.87rem);
+//   }
+// }
 
 // ---- Checkbox ----
 .checkbox-header {
